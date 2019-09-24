@@ -82,9 +82,11 @@ body {
     font-size: 18px;
   }
 
-  .navbar .nav-menu li a:visited {
+  .navbar .nav-menu li a:visited,
+  .navbar .nav-menu li a:link {
     color: white;
   }
+
 }
 
 /*
