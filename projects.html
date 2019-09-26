@@ -1,86 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Portfolio of Eric Wang" />
+    <meta name="description" content="Portfolio of Eric Wang"/>
     <title>Eric Wang's Portfolio</title>
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/v4-shims.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link href="index.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
+  </head>
+  <body>
     <header id="page-header">
-        <nav class="navbar">
-            <span class="navbar-toggle js-navbar-toggle">
-                <i class="fas fa-bars"></i>
-            </span>
-            <ul class="nav-menu js-nav-menu">
-                <li>
-                    <a href="./index.html" class="nav-link"><span>Home</span></a>
-                </li>
-                <li>
-                    <a href="./about.html" class="nav-link"><span>About</span></a>
-                </li>
-                <li>
-                    <a href="./projects.html" class="nav-link"><span>Projects</span></a>
-                </li>
-                <li>
-                    <a href="./skills.html" class="nav-link"><span>Skills</span></a>
-                </li>
-                <li>
-                    <a href="./contact.html" class="nav-link"><span>Contact</span></a>
-                </li>
-            </ul>
+      <div class="navbar">
+        <div class="nav-link navbar-toggle">
+          <i class="fas fa-bars" role="button" tabindex="0"></i>
+        </div>
+        <nav class="navbar-items">
+          <div class="nav-link">
+            <a href="./index.html" ><span>Home</span></a>
+          </div>
+          <div class="nav-link">
+            <a href="./about.html" ><span>About</span></a>
+          </div>
+          <div class="nav-link">
+            <a href="./projects.html" ><span>Projects</span></a>
+          </div>
+          <div class="nav-link">
+            <a href="./skills.html" ><span>Skills</span></a>
+          </div>
+          <div class="nav-link">
+            <a href="./contact.html" ><span>Contact</span></a>
+          </div>
         </nav>
+      </div>
     </header>
-    <main role="main" aria-live="assertive">
-        <h2>PROJECTS</h2>
-        <div class="filter-bar">
-            <div class="filter filter-active current" rel="all">All</div>
-            <div class="filter" rel="html">HTML</div>
-            <div class="filter" rel="js">JavaScript</div>
-        </div>
-        <div id="all-projects">
-            <div class="project all html js css">
-                <div class="card">
-                    <div class="img-container">
-                        <a href="https://ewang10.github.io/quiz-app/" target="_blank">
-                            <img class="project-image" src="./images/quiz-app.png" alt="Hero image of Quiz App"><span
-                                class="view-project-hover">View project</span>
-                        </a>
-                    </div>
-                    <div class="project-details">
-                        <h3>Quiz App</h3>
-                        <div class="project-tech">
-                            <i class="tech-icon fab fa-html5"></i>
-                            <i class="tech-icon fab fa-js-square"></i>
-                            <i class="tech-icon fab fa-css3-alt"></i>
-                        </div>
-                        <p class="project-description">
-                            A quiz app that tests your knowledge about the events that occurred in the Harry Potter
-                            movies and books.
-                        </p>
-                        <div class="project-links">
-                            <a href="https://github.com/ewang10/quiz-app" target="_blank">
-                                <button type="button" class="code-button">View code</button>
-                            </a>
-                            <a href="https://ewang10.github.io/quiz-app/" target="_blank">
-                                <button type="button" class="project-button">View project</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <main role="main" aria-live="assertive">    
+      <h2>PROJECTS</h2>
+      
+      <div class="filter-bar">
+        <div class="filter filter-active current" rel="all" role="button" tabindex="0">All</div>
+        <div class="filter" rel="html" role="button" tabindex="0">HTML</div>
+        <div class="filter" rel="js" role="button" tabindex="0">JavaScript</div>
+      </div>
+      
+      <div id="all-projects">
+        <div class="project all html js css">
+
+          <div class="card">
+          <div class="img-container">
+            <a href="https://ewang10.github.io/quiz-app/" target="_blank">
+            <img class="project-image" src="./images/quiz-app.png" alt="Hero image of Quiz App"><span class="view-project-hover">View project</span>
+            </a>
+          </div>
+          <div class="project-details">
+            <h3>Quiz App</h3>
+            <div class="project-tech">
+              <i class="tech-icon fab fa-html5"></i>
+              <i class="tech-icon fab fa-js-square"></i>
+              <i class="tech-icon fab fa-css3-alt"></i>
             </div>
+            <p class="project-description">
+              A quiz app that tests your knowledge about the events that occurred in the Harry Potter movies and books.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/ewang10/quiz-app" target="_blank">
+                <button type="button" class="code-button">View code</button>
+              </a>
+              <a href="https://ewang10.github.io/quiz-app/" target="_blank">
+                <button type="button" class="project-button">View project</button>
+              </a>
+            </div>
+          </div>
+          </div>
         </div>
+      </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+		integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>

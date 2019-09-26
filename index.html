@@ -1,55 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Portfolio of Eric Wang" />
+    <meta name="description" content="Portfolio of Eric Wang"/>
     <title>Eric Wang's Portfolio</title>
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/v4-shims.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link href="index.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
+  </head>
+  <body>
     <header id="page-header">
-        <nav class="navbar">
-            <span class="navbar-toggle js-navbar-toggle">
-                <i class="fas fa-bars"></i>
-            </span>
-            <ul class="nav-menu js-nav-menu">
-                <li>
-                    <a href="./index.html" class="nav-link"><span>Home</span></a>
-                </li>
-                <li>
-                    <a href="./about.html" class="nav-link"><span>About</span></a>
-                </li>
-                <li>
-                    <a href="./projects.html" class="nav-link"><span>Projects</span></a>
-                </li>
-                <li>
-                    <a href="./skills.html" class="nav-link"><span>Skills</span></a>
-                </li>
-                <li>
-                    <a href="./contact.html" class="nav-link"><span>Contact</span></a>
-                </li>
-            </ul>
+      <div class="navbar">
+        <div class="nav-link navbar-toggle">
+          <i class="fas fa-bars" role="button" tabindex="0"></i>
+        </div>
+        <nav class="navbar-items">
+          <div class="nav-link">
+            <a href="./index.html" ><span>Home</span></a>
+          </div>
+          <div class="nav-link">
+            <a href="./about.html" ><span>About</span></a>
+          </div>
+          <div class="nav-link">
+            <a href="./projects.html" ><span>Projects</span></a>
+          </div>
+          <div class="nav-link">
+            <a href="./skills.html" ><span>Skills</span></a>
+          </div>
+          <div class="nav-link">
+            <a href="./contact.html" ><span>Contact</span></a>
+          </div>
         </nav>
+      </div>
+
+      <!--
+      <nav class="navbar">  
+        <span class="navbar-toggle js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <ul class="nav-menu js-nav-menu">
+          <li>
+            <a href="./index.html" class="nav-link"><span>Home</span></a>
+          </li>
+          <li>
+            <a href="./about.html" class="nav-link"><span>About</span></a>
+          </li>
+          <li>
+            <a href="./projects.html" class="nav-link"><span>Projects</span></a>
+          </li>
+          <li>
+            <a href="./skills.html" class="nav-link"><span>Skills</span></a>
+          </li>
+          <li>
+            <a href="./contact.html" class="nav-link"><span>Contact</span></a>
+          </li>
+        </ul>
+      </nav>
+      -->
     </header>
     <main role="main" aria-live="assertive">
-        <section class="center" id="home">
-            <div class="center">
-                <h1>Hello, I'm <span class="highlight">Eric Wang</span>.<br>
-                    I'm a full-stack developer.</h1>
-                <a href="/projects.html"><button id="view-work">View my work</button></a>
-            </div>
-        </section>
+      <section class="center" id="home">
+        <div class="center">
+          <h1>Hello, I'm <span class="highlight">Eric Wang</span>.<br>
+          I'm a full-stack developer.</h1>
+          <a href="/projects.html"><button id="view-work">View my work</button></a>
+        </div>
+      </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+		integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
