@@ -12,7 +12,9 @@
     <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header id="page-header">
+    <div class="wrapper">
+
+    <header class="page-header">
       <div class="navbar">
         <div class="nav-link navbar-toggle">
           <i class="fas fa-bars" role="button" tabindex="0"></i>
@@ -36,7 +38,7 @@
         </nav>
       </div>
     </header>
-    <main role="main" aria-live="assertive">   
+    <main role="main" class="page-body" aria-live="assertive">   
       
       <h2>CONTACT</h2>
       <div class="content">
@@ -52,7 +54,11 @@
           </fieldset>
         </form>
       </div>
-      <footer>
+      <div class="push"></div>
+    </main>
+
+    
+    <footer>
         <ul class="footer-icons">
           <li>
             <a href="https://www.facebook.com/eric.wang.58726" target="_blank" title="Follow on Facebook"><i class="contact-icon fab fa-facebook-square" role="button" tabindex="0"></i></a>
@@ -68,7 +74,7 @@
           <p>ERIC WANG <span class="highlight">©2019</span></p>
         </div>
       </footer>
-    </main>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script src="index.js"></script>

@@ -11,23 +11,32 @@ function handleToggle() {
   .addEventListener('click', classToggle);
 }
 
+function handleHideContent() {
+  $(".navbar-toggle").on("click", function(event) {
+    $("main").toggleClass("hide");
+  });
+}
 
 function handleFilter() {
   $(".filter").on("click", function(event) {
+    //alert("text");
     $(".filter").removeClass("filter-active");
+    //alert("text2");
     $(this).addClass("filter-active");
-
+    //alert("text3");
     //Why is it not reaching here?
     let newSelection = "";
-    console.log("reach");
-    $("#all-projects").fadeTo(200, 0.10);
+    //alert("text4");
+    
+    
+    $(".all-projects").hide();
     $(".filter").removeClass("current");
     $(this).addClass("current");
     newSelection = $(this).attr("rel");
-    $(".project").not("."+newSelection).slideUp();
-		$("."+newSelection).slideDown();
-    $("#all-projects").fadeTo(600, 1);
-    console.log("reach");
+    $(".project").not("."+newSelection).hide();
+		$("."+newSelection).show();
+    $(".all-projects").show();
+    
   });
 
   
@@ -46,4 +55,6 @@ function handleKeyboard() {
 $(handleToggle);
 $(handleFilter);
 $(handleKeyboard);
+$(handleHideContent);
+
   
