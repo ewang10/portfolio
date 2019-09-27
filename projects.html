@@ -9,6 +9,8 @@
   <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/v4-shims.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
   <link href="index.css" rel="stylesheet" type="text/css" />
 </head>
@@ -20,26 +22,37 @@
         <i class="fas fa-bars" role="button" tabindex="0"></i>
       </div>
       <nav class="navbar-items">
-        <div class="nav-link">
-          <a href="./index.html"><span>Home</span></a>
+        <div class="nav-link center">
+          <div>
+            <a href="./index.html"><span>Home</span></a>
+          </div>
         </div>
-        <div class="nav-link">
-          <a href="./about.html"><span>About me</span></a>
+        <div class="nav-link center">
+          <div>
+            <a href="./about.html"><span>About</span></a>
+          </div>
         </div>
-        <div class="nav-link">
-          <a href="./projects.html"><span>My projects</span></a>
+        <div class="nav-link center">
+          <div>
+            <a href="./projects.html"><span>Projects</span></a>
+          </div>
         </div>
-        <div class="nav-link">
-          <a href="./skills.html"><span>My skills</span></a>
+        <div class="nav-link center">
+          <div>
+            <a href="./skills.html"><span>Skills</span></a>
+          </div>
         </div>
-        <div class="nav-link">
-          <a href="./contact.html"><span>My Contact Info</span></a>
+        <div class="nav-link center">
+          <div>
+            <a href="./contact.html"><span>Contact</span></a>
+          </div>
         </div>
       </nav>
     </div>
+
   </header>
   <main role="main" aria-live="assertive">
-    <h2>My projects</h2>
+    <h2>PROJECTS</h2>
 
     <div class="filter-bar">
       <div class="filter filter-active current" rel="all" role="button" tabindex="0">All</div>
@@ -52,7 +65,10 @@
 
         <div class="card">
           <div class="img-container">
-            Picture of my project
+            <a href="https://ewang10.github.io/quiz-app/" target="_blank">
+              <img class="project-image" src="./images/quiz-app.jpg" alt="Hero image of Quiz App"><span
+                class="view-project-hover">View project</span>
+            </a>
           </div>
           <div class="project-details">
             <h3>Quiz App</h3>
@@ -77,8 +93,7 @@
       </div>
     </div>
   </main>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
   <script src="index.js"></script>
 </body>
 
