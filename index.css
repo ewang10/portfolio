@@ -9,8 +9,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.05em;
-  background-color: #2F2F2F;
-  color: white;
+  
 }
 
 .hide {
@@ -18,9 +17,9 @@ body {
 }
 
 .navbar {
-  background-color: #333;
+  
   display: flex;
-  color: white;
+  
   
 }
 
@@ -45,7 +44,7 @@ body {
   cursor: pointer;
   font-size: 40px;
   font-weight: 100;
-  color: #808080;
+  
   
 }
 
@@ -66,7 +65,7 @@ body {
     height: calc(100% / 5);
     position: relative;
     font-size: 2em;
-    background-color: rgba(0,0,0,.02);
+    
     overflow: hidden;
 }
 
@@ -74,7 +73,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #5a5a5a;
+  
   text-decoration: none;
   margin: 65px 0;
 }
@@ -88,25 +87,22 @@ body {
 
 .fa-bars:hover,
 .fa-bars:focus {
-  color:white;
+  
 }
 
 .nav-link a:hover,
 .nav-link a:focus {
-  color: white;
+  
 }
 
 button:hover, button:focus {
   cursor: pointer;
-  background-color: #04C2C9;
-  border-color: #04C2C9;
+  
 }
 
 button {
   font-family: 'Montserrat', sans-serif;
-  background-color: #2F2F2F;
-  border: solid 2px white;
-  color: white;
+  
 }
 
 .home {
@@ -140,7 +136,7 @@ h1 {
 }
 
 .highlight {
-  color: #E31B6D;
+  
 }
 
 @media screen and (min-width: 600px) {
@@ -217,17 +213,7 @@ h2, h3, h4, .nav-menu li, .filter {
   
 }
 
-.fa-facebook-square {
-  color: #4868ad;
-}
 
-.fa-github-square {
-  color: #4e545a;
-}
-
-.fa-linkedin {
-  color: #0077ba;
-}
 
 @media screen and (min-width: 320px) {
   .bio {
@@ -310,10 +296,7 @@ h2, h3, h4, .nav-menu li, .filter {
   cursor: pointer;
 }
 
-.filter-active {
-  color: white;
-  background-color: red;
-}
+
 
 
 .project {
@@ -327,51 +310,19 @@ h2, h3, h4, .nav-menu li, .filter {
 
 .card {
   margin: 16px 16px 64px;
-  border: 1px solid white;
+
   max-width: 800px;
   
 }
 
-.img-container {
-  position: relative;
-  display: inline-block;
-}
 
-.img-container:hover .project-image {
-  filter: grayscale(100%) blur(2px);
-  cursor: pointer;
-}
 
 .project-image {
   width: 100%;
   max-width: 800px;
 }
 
-.view-project-hover {
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  color: white;
-  background-color: rgba(6, 59, 103, 0.3);
-  font-size: 3em;
-  max-width: 800px;
-  margin: 0 auto;
-  font-family: 'Lato', serif;
-  z-index: 999;
-}
 
-@media screen and (max-width: 600px) {
-  .view-project-hover {
-    font-size: 1.5em;
-  }
-}
-
-.img-container:hover > a > .view-project-hover {
-    opacity: 1;
-}
 
 .project-details {
   padding: 25px;
@@ -405,7 +356,7 @@ h3, .project-tech, .project-description {
 
 .tech-icon {
   font-size: 30px;
-  color: #5a5858;
+
 }
 
 .code-button, .project-button {
@@ -417,7 +368,7 @@ h3, .project-tech, .project-description {
   margin: 15px auto;
   padding: 20px;
   width: 80%;
-  border: solid 2px #565656;
+
 }
 
 .languages {
@@ -427,7 +378,7 @@ h3, .project-tech, .project-description {
 
 h4 {
   font-size: 1.5em;
-  border-bottom: 2px solid #565656;
+
   margin-bottom: 30px;
   padding-bottom: 20px;
 }
@@ -519,7 +470,7 @@ textarea {
 
 footer {
   padding: 15px 0;
-  background-color: #404040;
+
 }
 
 .contact-icon {
@@ -527,7 +478,7 @@ footer {
 }
 
 .footnote {
-  color: white;
+
   margin-top: 25px;
   opacity: 0.6;
   text-align: center;
