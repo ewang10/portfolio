@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Portfolio of Eric Wang"/>
-    <title>Eric Wang's Portfolio</title>
-    <link rel="shortcut icon" href="#">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/v4-shims.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link href="index.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <div class="wrapper">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Portfolio of Eric Wang" />
+  <title>Eric Wang's Portfolio</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/v4-shims.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="wrapper">
 
     <header class="page-header">
       <div class="navbar">
@@ -21,62 +23,64 @@
         </div>
         <nav class="navbar-items">
           <div class="nav-link">
-            <a href="./index.html" ><span>Home</span></a>
+            <a href="./index.html"><span>Home</span></a>
           </div>
           <div class="nav-link">
-            <a href="./about.html" ><span>About</span></a>
+            <a href="./about.html"><span>About</span></a>
           </div>
           <div class="nav-link">
-            <a href="./projects.html" ><span>Projects</span></a>
+            <a href="./projects.html"><span>Projects</span></a>
           </div>
           <div class="nav-link">
-            <a href="./skills.html" ><span>Skills</span></a>
+            <a href="./skills.html"><span>Skills</span></a>
           </div>
           <div class="nav-link">
-            <a href="./contact.html" ><span>Contact</span></a>
+            <a href="./contact.html"><span>Contact</span></a>
           </div>
         </nav>
       </div>
     </header>
-    <main role="main" class="page-body" aria-live="assertive">   
-      
+    <main role="main" class="page-body" aria-live="assertive">
       <h2>CONTACT</h2>
-      <div class="content">
-        <div class="form-text">
-          Have a question or want to chat?
+      <div class="center content-wrapper">
+        <div>
+          <div class="form-text">
+            Have a question or want to chat?
+          </div>
+          <form method="POST" action="https://formspree.io/ericwang27759@gmail.com">
+            <fieldset>
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="email" name="email" placeholder="Enter Email" required />
+              <textarea name="message" placeholder="Your Message"></textarea>
+              <button type="submit" class="submit-form">SUBMIT</button>
+            </fieldset>
+          </form>
         </div>
-        <form method="POST" action="https://formspree.io/ericwang27759@gmail.com">
-          <fieldset>
-            <input type="text" name="name" placeholder="Name" required/>
-            <input type="email" name="email" placeholder="Enter Email" required/>
-            <textarea name="message" placeholder="Your Message"></textarea>
-            <button type="submit" class="submit-form">SUBMIT</button>
-          </fieldset>
-        </form>
       </div>
-      <div class="push"></div>
     </main>
+    <footer role="footer">
+      <ul class="footer-icons">
+        <li>
+          <a href="https://www.facebook.com/eric.wang.58726" target="_blank" title="Follow on Facebook"><i
+              class="contact-icon fab fa-facebook-square" role="button" tabindex="0"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/ewang10" target="_blank" title="Follow on GitHub"><i
+              class="contact-icon fab fa-github-square" role="button" tabindex="0"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/yfwang10" target="_blank" title="Follow on LinkedIn"><i
+              class="contact-icon fab fa-linkedin" role="button" tabindex="0"></i></a>
+        </li>
+      </ul>
+      <div class="footnote">
+        <p>ERIC WANG <span class="highlight">©2019</span></p>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
 
-    
-    <footer>
-        <ul class="footer-icons">
-          <li>
-            <a href="https://www.facebook.com/eric.wang.58726" target="_blank" title="Follow on Facebook"><i class="contact-icon fab fa-facebook-square" role="button" tabindex="0"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/ewang10" target="_blank" title="Follow on GitHub"><i class="contact-icon fab fa-github-square" role="button" tabindex="0"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/yfwang10" target="_blank" title="Follow on LinkedIn"><i class="contact-icon fab fa-linkedin" role="button" tabindex="0"></i></a>
-          </li>
-        </ul>
-        <div class="footnote">
-          <p>ERIC WANG <span class="highlight">©2019</span></p>
-        </div>
-      </footer>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-  </body>
 </html>
