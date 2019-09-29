@@ -50,24 +50,24 @@ body {
 .navbar-items a {
   font-size: 1.6em;
   display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    width: 90%;
-    max-width: 600px;
-    margin: 0 auto;
-    height: calc(100% / 5);
-    position: relative;
-    background-color: rgba(0,0,0,.02);
-    overflow: hidden;
-    font-weight: 700;
-    color: #5a5a5a;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  height: calc(100% / 5);
+  position: relative;
+  background-color: rgba(0,0,0,.02);
+  overflow: hidden;
+  font-weight: 700;
+  color: #5a5a5a;
 }
 
 .navbar-items a span {
   display: block;
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -75,33 +75,68 @@ body {
     display: none
   }
 
+  .navbar {
+    height: auto;
+    padding: 30px 0;
+  }
+
   .navbar-items {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
-  }
-  .navbar {
-    background-color: #808080;
-    display: flex;
-    color: white;
+    
   }
 
   .navbar-items a {
-    font-size: 1.2em;
+    
     display: inline-block;
     width: auto;
     margin: 0 auto;
     height: auto;
     position: static;
-    background-color: none;
+    overflow: visible;
   }
 
-  .navbar-items a span {
+  .tooltip {
+    position: relative;
     display: inline-block;
-    width: 100%;
+  }
+
+  .tooltip i {
+    font-size: 1.5em;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
     text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+    font-size: 0.7em;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+
+  .tooltip:hover .tooltiptext, 
+  .tooltip:focus .tooltiptext {
+    visibility: visible;
   }
 }
 
