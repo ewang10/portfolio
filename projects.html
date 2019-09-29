@@ -9,8 +9,7 @@
   <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/v4-shims.css">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
   <link href="index.css" rel="stylesheet" type="text/css" />
 </head>
@@ -18,82 +17,66 @@
 <body>
   <header id="page-header">
     <div class="navbar">
-      <div class="nav-link navbar-toggle">
+      <span class="navbar-toggle">
         <i class="fas fa-bars" role="button" tabindex="0"></i>
-      </div>
+      </span>
       <nav class="navbar-items">
-        <div class="nav-link center">
-          <div>
-            <a href="./index.html"><span>Home</span></a>
-          </div>
-        </div>
-        <div class="nav-link center">
-          <div>
-            <a href="./about.html"><span>About</span></a>
-          </div>
-        </div>
-        <div class="nav-link center">
-          <div>
-            <a href="./projects.html"><span>Projects</span></a>
-          </div>
-        </div>
-        <div class="nav-link center">
-          <div>
-            <a href="./skills.html"><span>Skills</span></a>
-          </div>
-        </div>
-        <div class="nav-link center">
-          <div>
-            <a href="./contact.html"><span>Contact</span></a>
-          </div>
-        </div>
+        <a href="./index.html"><span>Home</span></a>
+        <a href="./about.html"><span>About</span></a>
+        <a href="./projects.html"><span>Projects</span></a>
+        <a href="./skills.html"><span>Skills</span></a>
+        <a href="./contact.html"><span>Contact</span></a>
       </nav>
     </div>
 
   </header>
   <main role="main" aria-live="assertive">
-    <h2>PROJECTS</h2>
+    <section class="projects">
+      <h2>PROJECTS</h2>
 
-    <div class="filter-bar">
-      <div class="filter filter-active current" rel="all" role="button" tabindex="0">All</div>
-      <div class="filter" rel="html" role="button" tabindex="0">HTML</div>
-      <div class="filter" rel="js" role="button" tabindex="0">JavaScript</div>
-    </div>
+      <div class="filter-bar">
+        <div class="filter filter-active current" rel="all" role="button" tabindex="0">All</div>
+        <div class="filter" rel="html" role="button" tabindex="0">HTML</div>
+        <div class="filter" rel="js" role="button" tabindex="0">JavaScript</div>
+      </div>
 
-    <div class="all-projects">
-      <div class="project all html js css">
+      <div class="all-projects">
+        <div class="project all html js css">
 
-        <div class="card">
-          <div class="img-container">
-            <a href="https://ewang10.github.io/quiz-app/" target="_blank">
-              <img class="project-image" src="./images/quiz-app.jpg" alt="Hero image of Quiz App"><span
-                class="view-project-hover">View project</span>
-            </a>
-          </div>
-          <div class="project-details">
-            <h3>Quiz App</h3>
-            <div class="project-tech">
-              <i class="tech-icon fab fa-html5"></i>
-              <i class="tech-icon fab fa-js-square"></i>
-              <i class="tech-icon fab fa-css3-alt"></i>
-            </div>
-            <p class="project-description">
-              A quiz app that tests your knowledge about the events that occurred in the Harry Potter movies and books.
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/ewang10/quiz-app" target="_blank">
-                <button type="button" class="code-button">View code</button>
-              </a>
+          <div class="card">
+            <div class="img-container">
               <a href="https://ewang10.github.io/quiz-app/" target="_blank">
-                <button type="button" class="project-button">View project</button>
+                <img class="project-image" src="./images/quiz-app.jpg" alt="Hero image of Quiz App"><span
+                  class="view-project-hover">View project</span>
               </a>
+            </div>
+            <div class="project-details">
+              <h3>Quiz App</h3>
+              <div class="project-tech">
+                <i class="tech-icon fab fa-html5"></i>
+                <i class="tech-icon fab fa-js-square"></i>
+                <i class="tech-icon fab fa-css3-alt"></i>
+              </div>
+              <p class="project-description">
+                A quiz app that tests your knowledge about the events that occurred in the Harry Potter movies and
+                books.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/ewang10/quiz-app" target="_blank">
+                  <button type="button" class="code-button">View code</button>
+                </a>
+                <a href="https://ewang10.github.io/quiz-app/" target="_blank">
+                  <button type="button" class="project-button">View project</button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="index.js"></script>
 </body>
 

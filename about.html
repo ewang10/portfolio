@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/v4-shims.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
   <link href="index.css" rel="stylesheet" type="text/css" />
 </head>
@@ -16,70 +17,51 @@
 <body>
   <header id="page-header">
     <div class="navbar">
-      <div class="nav-link navbar-toggle">
+      <span class="navbar-toggle">
         <i class="fas fa-bars" role="button" tabindex="0"></i>
-      </div>
+      </span>
       <nav class="navbar-items">
-        <div class="nav-link center">
-          <div>
-            <a href="./index.html"><span>Home</span></a>
-          </div>
-        </div>
-        <div class="nav-link center">
-          <div>
-            <a href="./about.html"><span>About</span></a>
-          </div>
-        </div>
-        <div class="nav-link center">
-          <div>
-            <a href="./projects.html"><span>Projects</span></a>
-          </div>
-        </div>
-        <div class="nav-link center">
-          <div>
-            <a href="./skills.html"><span>Skills</span></a>
-          </div>
-        </div>
-        <div class="nav-link center">
-          <div>
-            <a href="./contact.html"><span>Contact</span></a>
-          </div>
-        </div>
+        <a href="./index.html"><span>Home</span></a>
+        <a href="./about.html"><span>About</span></a>
+        <a href="./projects.html"><span>Projects</span></a>
+        <a href="./skills.html"><span>Skills</span></a>
+        <a href="./contact.html"><span>Contact</span></a>
       </nav>
     </div>
 
   </header>
   <main role="main" aria-live="assertive">
-    <h2>ABOUT</h2>
-    <div>
-      <p class="bio">
-        I’m a fullstack developer who is a fairly recent graduate of Boston University with a Bachelor’s in Computer
-        Science. I am currently a student of the Web Developer Track bootcamp at Bloc/Thinkful. I love coding because of
-        the satisfaction I get from seeing ideas come to life, and I like to fiddle around with technologies. I love
-        turning complex problems into simple and beautiful designs. <br>
-        My interests include technology, video games, meditation, hiking and other outdoor activities, going to the gym,
-        traveling, and exploring local restaurants and shops. I love experiencing and learning all kinds of things. My
-        current learning project (beyond coding) is trading options.
-      </p>
-    </div>
-    <div class="follow-me">
-      <ul>
-        <li><small>Follow me!</small></li>
-        <li>
-          <a href="https://www.facebook.com/eric.wang.58726" target="_blank" title="Follow on Facebook"><i
-              class="follow-icon fab fa-facebook-square" role="button" tabindex="0"></i></a>
-        </li>
-        <li>
-          <a href="https://github.com/ewang10" target="_blank" title="Follow on GitHub"><i
-              class="follow-icon fab fa-github-square" role="button" tabindex="0"></i></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/yfwang10" target="_blank" title="Follow on LinkedIn"><i
-              class="follow-icon fab fa-linkedin" role="button" tabindex="0"></i></a>
-        </li>
-      </ul>
-    </div>
-
+    <section class="about">
+      <h2>ABOUT</h2>
+      <div class="content">
+        <p class="bio">
+          I’m a fullstack developer who is a fairly recent graduate of Boston University with a Bachelor’s in Computer
+          Science. I am currently a student of the Web Developer Track bootcamp at Bloc/Thinkful. I love coding because
+          of the satisfaction I get from seeing ideas come to life, and I like to fiddle around with technologies. I
+          love turning complex problems into simple and beautiful designs. <br>
+          My interests include technology, video games, meditation, hiking and other outdoor activities, going to the
+          gym, traveling, and exploring local restaurants and shops. I love experiencing and learning all kinds of
+          things. My current learning project (beyond coding) is trading options.
+        </p>
+      </div class="content">
+      <section class="follow-me">
+        <ul>
+          <li><small>Follow me!</small></li>
+          <li class="follow-icon">
+            <a href="https://www.facebook.com/eric.wang.58726" target="_blank" title="Follow on Facebook"><i
+                class="fab fa-facebook-square" role="button" tabindex="0"></i></a>
+          </li>
+          <li class="follow-icon">
+            <a href="https://github.com/ewang10" target="_blank" title="Follow on GitHub"><i
+                class="fab fa-github-square" role="button" tabindex="0"></i></a>
+          </li>
+          <li class="follow-icon">
+            <a href="https://www.linkedin.com/in/yfwang10" target="_blank" title="Follow on LinkedIn"><i
+                class="fab fa-linkedin" role="button" tabindex="0"></i></a>
+          </li>
+        </ul>
+      </section>
+    </section>
   </main>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
