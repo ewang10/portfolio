@@ -346,14 +346,14 @@ h2, h3, h4, .nav-menu li, .filter {
 /*projects.html*/
 .filter-bar {
   margin: 50px auto;
-  display: flex;
+  padding: 10px;
   width: 80%; 
 }
 
 .filter {
   margin: 5px auto;
   padding: 10px;
-  width: 34%;
+  width: auto;
   display: inline-block;
   text-align: center;
   font-weight: 700;
@@ -658,4 +658,12 @@ form {
   .submit-form {
     font-size: 1.2em;
   }
+}
+
+a:focus,
+input:focus,
+button:focus,
+textarea:focus,
+i:focus {
+  outline: none;
 }
