@@ -197,7 +197,7 @@ h1 {
 }
 
 .highlight {
-  color: #E31B6D;
+  color: #04C2C9;
 }
 
 @media screen and (min-width: 600px) {
@@ -523,35 +523,6 @@ h4 {
   height: 70%;
 }
 
-fieldset {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  min-width: 0;
-}
-
-
-input, textarea, .submit-form {
-  display: block;
-}
-
-.submit-form {
-  margin: 10px auto 0;
-  padding: 10px 30px;
-  font-weight: 700;
-}
-
-input, textarea {
-  width: 100%;
-  margin-top: 5px;
-  padding: 10px 15px;
-  font-size: 1em;
-}
-
-textarea {
-  height: 150px;
-}
-
 .footer-icons, .footer-icons li {
   display: inline-block;
 }
@@ -596,12 +567,6 @@ footer {
   font-size: 0.8em;
 }
 
-form {
-  padding: 20px;
-  min-width: 500px;
-  margin: 0 auto;
-}
-
 @media screen and (min-width: 320px) {
   .form-text {
     text-align: center;
@@ -610,16 +575,6 @@ form {
     min-width: 95%;
     padding: 0 15px;
     line-height: 150%;
-  }
-
-  textarea {
-    height: 100px;
-  }
-
-  form {
-    padding: 20px;
-    min-width: 95%;
-    margin: 0 auto;
   }
 }
 
@@ -635,30 +590,12 @@ form {
     font-size: 1.2em; 
   }
 
-  input, textarea {
-    margin-top: 5px;
-    padding: 10px 15px;
-    font-size: 1.2em;
-    margin: 0 auto;
-  }
-
-  textarea {
-    height: 150px;
-  }
-
   footer {
     padding: 50px 0;
   }
 
   .contact-icon {
     font-size: 60px;
-  }
-}
-
-@media screen and (min-width: 800px) {
-
-  .submit-form {
-    font-size: 1.2em;
   }
 }
 
