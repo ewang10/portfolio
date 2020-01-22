@@ -152,7 +152,6 @@ body {
   cursor: pointer;
 }
 
-button > a:hover, button > a:focus, 
 .code-button > a:hover, 
 .code-button > a:focus, 
 .project-button > a:hover,
@@ -164,8 +163,9 @@ button > a:hover, button > a:focus,
   border-color: #04C2C9;
 }
 
-button, #view-work,
-.code-button, .project-button {
+#view-work,
+.code-button, 
+.project-button {
   font-family: 'Lato', sans-serif;
   background-color: #2F2F2F;
   border: solid 2px white;
@@ -636,7 +636,6 @@ footer {
 
 a:focus,
 input:focus,
-button:focus,
 textarea:focus,
 i:focus {
   outline: none;
