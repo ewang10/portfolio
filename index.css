@@ -152,7 +152,7 @@ body {
   cursor: pointer;
 }
 
-button:hover, button:focus, 
+button > a:hover, button > a:focus, 
 #view-work > a:hover, 
 #view-work > a:focus {
   cursor: pointer;
@@ -466,6 +466,13 @@ h3 {
   font-size: 1.2em;
 }
 
+.code-button > a,
+.project-button > a {
+  color: white;
+  padding: 5px 15px;
+  width: 100%;
+}
+
 @media screen and (max-width: 600px) {
   .project-description, .code-button, .project-button {
     font-size: 0.98em;
@@ -485,8 +492,16 @@ h3, .project-tech, .project-description {
   color: #5a5858;
 }
 
+.project-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .code-button, .project-button {
-  padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*skills.html*/
