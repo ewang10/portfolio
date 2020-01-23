@@ -261,13 +261,15 @@ h2, h3, h4, .nav-menu li, .filter {
 /*about.html*/
 .bio {
   line-height: 150%;
-  text-align: left; 
+  text-align: left;
+  /*
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  */
   width: 50%;
-  margin: 0 auto;
+  margin: 25vh auto;
 }
 
 
@@ -277,6 +279,8 @@ h2, h3, h4, .nav-menu li, .filter {
   top: calc(50% - (275px / 2));
   width: 55px;
   height: 275px;
+  display: flex;
+  align-items: center;
 }
 
 .follow-me h4 {
@@ -321,7 +325,7 @@ h2, h3, h4, .nav-menu li, .filter {
   .bio {
     line-height: 130%;
     width: 95%;
-    margin: 30px auto 0;
+    /*margin: 30px auto 0;*/
     font-size: 14px;
   }
 }
@@ -342,7 +346,7 @@ h2, h3, h4, .nav-menu li, .filter {
 @media screen and (max-width: 600px) {
   
   .follow-me {
-    position: fixed;
+    position: relative;
     bottom: 35px;
     width: 100%;
     height: auto;
