@@ -68,6 +68,12 @@ body {
   display: block;
   width: 100%;
   text-align: center;
+
+  color: white;
+}
+
+.navbar-items a span:hover {
+  color: #04C2C9;
 }
 
 @media screen and (min-width: 768px) {
@@ -105,6 +111,11 @@ body {
 
   .tooltip i {
     font-size: 1.5em;
+    color: white;
+  }
+
+  .tooltip i:hover {
+    color: #04C2C9;
   }
 
   .tooltip .tooltiptext {
@@ -140,9 +151,13 @@ body {
   }
 }
 
+.fa-bars {
+  color: white;
+}
+
 .fa-bars:hover,
 .fa-bars:focus {
-  color:white;
+  color:#04C2C9;
   cursor: pointer;
 }
 
@@ -168,7 +183,6 @@ body {
 .project-button {
   font-family: 'Lato', sans-serif;
   background-color: #2F2F2F;
-  border: solid 2px white;
   color: white;
 }
 
@@ -184,6 +198,7 @@ body {
   margin: 0 auto;
   font-size: inherit;
   width: 60%;
+  border: solid 2px white;
 }
 
 #view-work > a {
@@ -238,16 +253,16 @@ h2 {
   text-align: center;
   margin: 90px auto 0;
   text-decoration: underline;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 h2, h3, h4, .nav-menu li, .filter {
   font-family: 'Roboto Slab', serif;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
   h2 {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 }
 
@@ -268,13 +283,13 @@ h2, h3, h4, .nav-menu li, .filter {
 
 
 .follow-me {
-  position: fixed;
+  position: relative;
+  bottom: 35px;
+  width: 100%;
+  height: auto;
+  top: auto;
   left: 0;
-  top: calc(50% - (275px / 2));
-  width: 55px;
-  height: 275px;
-  display: flex;
-  align-items: center;
+  text-align: left;
 }
 
 .follow-me h4 {
@@ -288,15 +303,23 @@ h2, h3, h4, .nav-menu li, .filter {
   list-style-type: none;
 }
 
-.follow-me small { 
-  width: 100%;
-  text-align: right;
-  font-weight: 600;
-  font-size: 0.58em;
+  .follow-me small { 
+    
+    font-size: 0.7em;
+    text-align: left;
+    padding-left: 15px;
   }
 
-.follow-icon:hover, .follow-icon:focus {
-  transform: translate3d(20px,0,0);
+  .follow-me li {
+    display: inline-block;
+  }
+
+.follow-icon {
+  font-size: 40px;
+}
+
+.follow-icon:hover {
+transform: translate3d(0,0,0);
 }
 
 .follow-icon .fab {
@@ -308,7 +331,7 @@ h2, h3, h4, .nav-menu li, .filter {
 }
 
 .fa-github-square {
-  color: #4e545a;
+  color: #C8D7E6;
 }
 
 .fa-linkedin {
@@ -329,35 +352,28 @@ h2, h3, h4, .nav-menu li, .filter {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
   
   .follow-me {
-    position: relative;
-    bottom: 35px;
-    width: 100%;
-    height: auto;
-    top: auto;
+    position: fixed;
     left: 0;
-    text-align: left;
+    top: calc(50% - (275px / 2));
+    width: 55px;
+    height: 275px;
+    display: flex;
+    align-items: center;
   }
 
   .follow-me small { 
-    
-    font-size: 0.7em;
-    text-align: left;
-    padding-left: 15px;
-  }
+    width: 100%;
+    text-align: right;
+    font-weight: 600;
+    font-size: 0.58em;
+    padding-left: 0;
+    }
 
-  .follow-me li {
-    display: inline-block;
-  }
-
-  .follow-icon {
-    font-size: 40px;
-  }
-
-  .follow-icon:hover {
-  transform: translate3d(0,0,0);
+  .follow-icon:hover, .follow-icon:focus {
+    transform: translate3d(20px,0,0);
   }
 }
 
@@ -435,16 +451,16 @@ h2, h3, h4, .nav-menu li, .filter {
   text-align: center;
   color: white;
   background-color: rgba(6, 59, 103, 0.3);
-  font-size: 3em;
+  font-size: 1.5em;
   max-width: 800px;
   margin: 0 auto;
   font-family: 'Roboto Slab', serif;
   z-index: 999;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
   .view-project-hover {
-    font-size: 1.5em;
+    font-size: 3em;
   }
 }
 
@@ -465,7 +481,7 @@ h3 {
 }
 
 .project-description, .code-button, .project-button {
-  font-size: 1.2em;
+  font-size: 0.98em;
 }
 
 .code-button > a,
@@ -475,13 +491,18 @@ h3 {
   width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+.code-button, 
+.project-button {
+  border: solid 1.5px white;
+}
+
+@media screen and (min-width: 600px) {
   .project-description, .code-button, .project-button {
-    font-size: 0.98em;
+    font-size: 1.2em;
   }
   
   .code-button, .project-button {
-    border: solid 1.5px;
+    border: solid 2px;
   }
 }
 
@@ -491,7 +512,7 @@ h3, .project-tech, .project-description {
 
 .tech-icon {
   font-size: 30px;
-  color: #5a5858;
+  color: #E6E1E1;
 }
 
 .project-links {
@@ -528,7 +549,7 @@ h4 {
 
 
 .icons .icon {
-  padding: 0 0.75rem;
+  padding: 0 0.7rem;
   vertical-align: middle;
   display: inline-block;
   width: auto;

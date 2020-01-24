@@ -53,33 +53,33 @@ function navbarDisplay() {
         `;
   } else {
     navHTML = `
-          <a href="./index.html">
+          <a href="./index.html" aria-label="home page">
               <div class="tooltip">
-                <i class="nav-icons fas fa-home"></i>
+                <i class="nav-icons fas fa-home" aria-hidden="true"></i>
                 <span class="tooltiptext">Home</span>
               </div>
             </a>
-            <a href="./about.html">
+            <a href="./about.html" aria-label="about page">
               <div class="tooltip">
-                <i class="fas fa-user"></i>
+                <i class="fas fa-user" aria-hidden="true"></i>
                 <span class="tooltiptext">About</span>
               </div>
             </a>
-            <a href="./projects.html">
+            <a href="./projects.html" aria-label="project page">
               <div class="tooltip">
-                <i class="fas fa-laptop-code"></i>
+                <i class="fas fa-laptop-code" aria-hidden="true"></i>
                 <span class="tooltiptext">Projects</span>
               </div>
             </a>
-            <a href="./skills.html">
+            <a href="./skills.html" aria-label="skill page">
               <div class="tooltip">
-                <i class="fas fa-code"></i>
+                <i class="fas fa-code" aria-hidden="true"></i>
                 <span class="tooltiptext">Skills</span>
               </div>
             </a>
-            <a href="./contact.html">
+            <a href="./contact.html" aria-label="contact page">
               <div class="tooltip">
-                <i class="fas fa-envelope"></i>
+                <i class="fas fa-envelope" aria-hidden="true"></i>
                 <span class="tooltiptext">Contact</span>
               </div>
             </a>
